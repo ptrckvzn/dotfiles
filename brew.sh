@@ -124,6 +124,10 @@ brew install node
 brew install ruby
 brew install ngrep
 
+# fzf - fuzzy finder
+brew install fzf
+$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc --no-fish --no-zsh
+
 # Music
 brew install flac
 brew install lame

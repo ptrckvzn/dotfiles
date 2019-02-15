@@ -56,3 +56,6 @@ fi
 if which brew &> /dev/null && [ -f "$(brew --prefix)/etc/profile.d/z.sh" ]; then
   . "$(brew --prefix)/etc/profile.d/z.sh"
 fi;
+
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
