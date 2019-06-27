@@ -11,6 +11,9 @@ composer global require laravel/valet
 composer global require squizlabs/PHP_CodeSniffer
 composer global require friendsofphp/php-cs-fixer
 
+# nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
 # NPM
 npm install -g yarn@latest
 npm install -g create-next-app
@@ -40,3 +43,4 @@ wp package install git@github.com:alwaysblank/blade-generate.git
 # cd ~
 # git clone https://github.com/stevegrunwell/asimov
 # cd asimov && ./install.sh
+
