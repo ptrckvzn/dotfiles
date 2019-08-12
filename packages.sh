@@ -44,3 +44,6 @@ wp package install git@github.com:alwaysblank/blade-generate.git
 # git clone https://github.com/stevegrunwell/asimov
 # cd asimov && ./install.sh
 
+# fz - https://github.com/changyuheng/fz
+[ ! -d ~/.bash_completion.d ] && mkdir ~/.bash_completion.d
+curl "https://raw.githubusercontent.com/changyuheng/fz/master/{fz.sh}" -o ~/.bash_completion.d/z"#1"
