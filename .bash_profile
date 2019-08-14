@@ -52,10 +52,16 @@ if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
     source `brew --prefix`/etc/bash_completion.d/vagrant
 fi
 
-# z - jump-around
-if which brew &> /dev/null && [ -f "$(brew --prefix)/etc/profile.d/z.sh" ]; then
-  . "$(brew --prefix)/etc/profile.d/z.sh"
-fi;
-
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# z - jump-around
+[ -f "$(brew --prefix)/etc/profile.d/z.sh" ] && source "$(brew --prefix)/etc/profile.d/z.sh"
+
+# fz - https://github.com/changyuheng/fz
+[ -f ~/.bash_completion.d/zfz.sh ] && source ~/.bash_completion.d/zfz.sh
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

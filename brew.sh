@@ -100,6 +100,7 @@ brew install rename
 brew install ssh-copy-id
 brew install tree
 brew install vbindiff
+brew install z
 brew install zopfli
 
 # Python
@@ -113,13 +114,12 @@ pyenv global 3.7.1
 brew install hub
 brew install pngquant
 brew install webkit2png
-brew install z
 brew install composer
 brew install mariadb
 brew install git-flow
 brew install gettext
 # brew install go
-brew install node
+# brew install node
 # brew install python
 brew install ruby
 brew install ngrep
