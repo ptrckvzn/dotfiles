@@ -38,7 +38,7 @@ prompt_git() {
 		if ! $(git diff --quiet --ignore-submodules --cached); then
 			s+='+';
 		fi;
-    # Check for unstaged changes.
+		# Check for unstaged changes.
 		if ! $(git diff-files --quiet --ignore-submodules --); then
 			s+='!';
 		fi;
