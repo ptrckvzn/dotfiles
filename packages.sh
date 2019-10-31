@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Python
-pip install ansible
+pip install ansible==2.8.5
 
 # Gems
 gem install bitters
@@ -15,10 +15,8 @@ composer global require friendsofphp/php-cs-fixer
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # NPM
-npm install -g yarn@latest
 npm install -g create-next-app
 npm install -g create-react-app
-npm install -g create-react-native-app
 npm install -g eslint
 npm install -g gatsby-cli
 npm install -g pa11y

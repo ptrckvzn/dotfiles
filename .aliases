@@ -17,12 +17,10 @@ alias b="git browse"
 alias h="history"
 alias j="jobs"
 alias q="qlmanage -p "
-alias n="npm"
-alias y="yarn"
-alias start="yarn start"
-alias r="yarn run"
-alias develop="yarn run develop"
-alias dev="yarn run dev"
+alias start="npm start"
+alias r="npm run"
+alias develop="npm run develop"
+alias dev="npm run dev"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
