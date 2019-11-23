@@ -120,6 +120,7 @@ brew tap caskroom/cask
 # brew cask install amethyst
 brew cask install adobe-digital-editions
 brew cask install calibre
+brew cask install rectangle
 brew cask install dropbox
 brew cask install figma
 brew cask install firefox-developer-edition
@@ -151,7 +152,6 @@ brew cask install skype
 brew cask install slack
 brew cask install soulseek
 brew cask install sourcetree
-brew cask install spectacle
 brew cask install transmission
 brew cask install unrarx
 brew cask install vagrant
