@@ -21,10 +21,8 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
-# Install a modern version of Bash.
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
-# running `chsh`.
+brew install gnu-sed
+# Install a modern version of Bash
 brew install bash
 brew install bash-completion2
 
@@ -35,13 +33,13 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 # brew install openssh
 brew install screen
@@ -64,7 +62,8 @@ brew install ack
 #brew install exiv2
 brew install git
 brew install git-lfs
-brew install imagemagick --with-webp
+brew install gs
+brew install imagemagick
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -99,9 +98,6 @@ pyenv global 2.7.17
 
 # Node
 brew install nvm
-nvm install 8
-nvm install 9
-nvm use 8
 
 # fzf - fuzzy finder
 brew install fzf
@@ -123,7 +119,7 @@ brew cask install calibre
 brew cask install rectangle
 brew cask install dropbox
 brew cask install figma
-brew cask install firefox-developer-edition
+brew cask install homebrew/cask-versions/firefox-developer-edition
 brew cask install flash-player
 brew cask install google-backup-and-sync
 brew cask install google-chrome
@@ -138,6 +134,7 @@ brew cask install keka
 brew cask install min
 brew cask install musicbrainz-picard
 brew cask install onyx
+brew cask install phpstorm
 brew cask install plex-media-player
 brew cask install poedit
 brew cask install postman
@@ -145,6 +142,7 @@ brew cask install qlcolorcode
 brew cask install qlmarkdown
 brew cask install qlstephen
 brew cask install quicklook-json
+brew cask install rectangle
 brew cask install sequel-pro
 brew cask install sketch
 brew cask install sketch-toolbox

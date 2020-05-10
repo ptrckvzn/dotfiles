@@ -3,9 +3,6 @@
 # Python
 pip install ansible==2.8.5
 
-# Gems
-gem install bitters
-
 # Composer
 composer global require laravel/valet
 composer global require squizlabs/PHP_CodeSniffer
@@ -15,6 +12,10 @@ composer global require friendsofphp/php-cs-fixer
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
 # NPM
+nvm install 8
+nvm install 9
+nvm use 8
+
 npm install -g create-next-app
 npm install -g create-react-app
 npm install -g eslint
