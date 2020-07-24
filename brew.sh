@@ -115,8 +115,6 @@ brew tap caskroom/cask
 
 # brew cask install amethyst
 brew cask install adobe-digital-editions
-brew cask install calibre
-brew cask install rectangle
 brew cask install dropbox
 brew cask install figma
 brew cask install homebrew/cask-versions/firefox-developer-edition
@@ -131,10 +129,11 @@ brew cask install java
 brew cask install kap # video capture
 brew cask install karabiner-elements
 brew cask install keka
-brew cask install min
-brew cask install musicbrainz-picard
-brew cask install onyx
-brew cask install phpstorm
+# brew cask install min
+# brew cask install musicbrainz-picard
+# brew cask install onyx
+brew cask install oryoki
+# brew cask install phpstorm
 brew cask install plex-media-player
 brew cask install poedit
 brew cask install postman

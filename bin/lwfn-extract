@@ -1,0 +1,3 @@
+#!/bin/bash
+
+if (test -f $1); then fondu $1/..namedfork/rsrc; fi

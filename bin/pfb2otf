@@ -1,0 +1,3 @@
+#!/bin/bash
+
+if (test -f $1); then FONTFORGE_LANGUAGE=ff fontforge-pfb2otf $1; fi

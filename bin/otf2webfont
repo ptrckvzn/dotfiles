@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# use: find . -name '*.otf' -exec ./otf2webfont.sh {} \;
+
+basename=`basename $1 .otf`
+
+otfFont="$basename.otf"
+ttfFont="$basename.ttf"
+eotFont="$basename.eot"
+
+# otf to woff2
+if (test -f $otfFont); then woff2_compress $otfFont; fi
+
+# otf to woff
+if (test -f $otfFont); then sfnt2woff-zopfli $otfFont; fi
+
+# otf to ttf
+if (test -f $otfFont); then FONTFORGE_LANGUAGE=ff fontforge-otf2ttf $otfFont; fi
+
+# ttf to eot
+if (test -f $ttfFont); then ttf2eot "$ttfFont" >"$eotFont"; fi
