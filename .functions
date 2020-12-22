@@ -258,3 +258,8 @@ function mkicns() {
 function tre() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+# Generate password
+function password() {
+  date +%s | sha256sum | base64 | head -c 32 ; echo;
+}
