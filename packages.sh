@@ -43,5 +43,5 @@ vagrant plugin install vagrant-bindfs # required by ansible
 # cd asimov && ./install.sh
 
 # fz - https://github.com/changyuheng/fz
-[ ! -d ~/.bash_completion.d ] && mkdir ~/.bash_completion.d
+[ ! -d ~/.bash_completion.d ] && mkdir ~/.bash_completion.d
 curl "https://raw.githubusercontent.com/changyuheng/fz/master/{fz.sh}" -o ~/.bash_completion.d/z"#1"
