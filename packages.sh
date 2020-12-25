@@ -9,7 +9,7 @@ composer global require squizlabs/PHP_CodeSniffer
 composer global require friendsofphp/php-cs-fixer
 
 # nvm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 
 # NPM
 # nvm install 8
@@ -35,12 +35,6 @@ vagrant plugin install vagrant-bindfs # required by ansible
 # WP-CLI
 # wp package install aaemnnosttv/wp-cli-valet-command
 # wp package install git@github.com:alwaysblank/blade-generate.git
-
-# Automatically exclude development dependencies from Apple Time Machine backups
-# https://github.com/stevegrunwell/asimov
-# cd ~
-# git clone https://github.com/stevegrunwell/asimov
-# cd asimov && ./install.sh
 
 # fz - https://github.com/changyuheng/fz
 [ ! -d ~/.bash_completion.d ] && mkdir ~/.bash_completion.d

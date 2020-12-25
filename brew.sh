@@ -21,7 +21,7 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash
 brew install bash
 brew install bash-completion2
@@ -32,20 +32,23 @@ if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
   chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
-# Install `wget` with IRI support.
-brew install wget --with-iri
+# Install `wget`
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 # brew install openssh
 brew install screen
 brew install rsync
 brew install php
 brew install gmp
+brew install bzip2
+brew install readline
+brew install zlib
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -64,6 +67,7 @@ brew install git
 brew install git-lfs
 brew install gs
 brew install imagemagick
+brew install java
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -85,19 +89,7 @@ brew install git-flow
 brew install gettext
 brew install ruby
 brew install ngrep
-
-xcode-select --install
-
-# Python
-# https://weknowinc.com/blog/running-multiple-python-versions-mac-osx
 brew install pyenv
-# brew install readline xz
-pyenv install 2.7.17
-pyenv install 3.8.0
-pyenv global 2.7.17
-
-# Node
-brew install nvm
 
 # fzf - fuzzy finder
 brew install fzf
@@ -111,52 +103,49 @@ brew install lame
 brew install wp-cli
 
 # Hombrew Cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 
-# brew cask install amethyst
-brew cask install adobe-digital-editions
-brew cask install dropbox
-brew cask install figma
-brew cask install homebrew/cask-versions/firefox-developer-edition
-brew cask install flash-player
-brew cask install google-backup-and-sync
-brew cask install google-chrome
-brew cask install handbrake
-brew cask install harvest
-brew cask install hyper
-brew cask install imageoptim
-brew cask install java
-brew cask install kap # video capture
-brew cask install karabiner-elements
-brew cask install keka
-# brew cask install min
-# brew cask install musicbrainz-picard
-# brew cask install onyx
-brew cask install oryoki
-# brew cask install phpstorm
-brew cask install plex-media-player
-brew cask install poedit
-brew cask install postman
-brew cask install qlcolorcode
-brew cask install qlmarkdown
-brew cask install qlstephen
-brew cask install quicklook-json
-brew cask install rectangle
-brew cask install sequel-pro
-brew cask install sketch
-brew cask install sketch-toolbox
-brew cask install skype
-brew cask install slack
-brew cask install soulseek
-brew cask install sourcetree
-brew cask install transmission
-brew cask install unrarx
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install virtualbox
-brew cask install virtualbox-extension-pack
-brew cask install visual-studio-code
-brew cask install vlc
+# brew install --cask amethyst
+brew install --cask adobe-digital-editions
+brew install --cask dropbox
+brew install --cask figma
+brew install --cask homebrew/cask-versions/firefox-developer-edition
+brew install --cask flash-player
+brew install --cask google-backup-and-sync
+brew install --cask google-chrome
+brew install --cask handbrake
+brew install --cask harvest
+brew install --cask hyper
+brew install --cask imageoptim
+brew install --cask kap
+brew install --cask karabiner-elements
+brew install --cask keka
+# brew install --cask min
+# brew install --cask musicbrainz-picard
+brew install --cask onyx
+brew install --cask oryoki
+# brew install --cask phpstorm
+brew install --cask plex-media-player
+brew install --cask poedit
+brew install --cask postman
+brew install --cask qlcolorcode
+brew install --cask qlmarkdown
+brew install --cask qlstephen
+brew install --cask quicklook-json
+brew install --cask qlImageSize
+brew install --cask rectangle
+brew install --cask sequel-pro
+brew install --cask skype
+brew install --cask slack
+# brew install --cask soulseek
+brew install --cask sourcetree
+brew install --cask transmission
+brew install --cask vagrant
+brew install --cask vagrant-manager
+brew install --cask virtualbox
+brew install --cask virtualbox-extension-pack
+brew install --cask visual-studio-code
+brew install --cask vlc
 
 # Completions
 brew install vagrant-completion
