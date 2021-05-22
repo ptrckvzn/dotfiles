@@ -80,6 +80,7 @@ brew install tree
 brew install vbindiff
 brew install z
 brew install zopfli
+brew install http-server
 brew install hub
 brew install pngquant
 brew install webkit2png
