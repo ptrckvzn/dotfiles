@@ -3,15 +3,8 @@
 # https://www.vagrantup.com/docs/synced-folders/nfs.html
 
 # Making a temporary file to contain the sudoers-changes to be pre-checked
-TMP=$(mktemp -t vagrant_sudoers)
-# cat /etc/sudoers/ > $TMP
+TMP=$(mktemp -t vagrant_sudoers.XXXXXX)
 cat > $TMP <<EOF
-# Allow passwordless startup of Vagrant when using NFS.
-Cmnd_Alias VAGRANT_EXPORTS_ADD = /usr/bin/tee -a /etc/exports
-Cmnd_Alias VAGRANT_NFSD = /sbin/nfsd restart
-Cmnd_Alias VAGRANT_EXPORTS_REMOVE = /usr/bin/sed -E -e /*/ d -ibak /etc/exports
-%admin ALL=(root) NOPASSWD: VAGRANT_EXPORTS_ADD, VAGRANT_NFSD, VAGRANT_EXPORTS_REMOVE
-
 # Allow passwordless startup of Vagrant with vagrant-hostsupdater.
 Cmnd_Alias VAGRANT_HOSTS_ADD = /bin/sh -c echo "*" >> /etc/hosts
 Cmnd_Alias VAGRANT_HOSTS_REMOVE = /usr/bin/sed -i -e /*/ d /etc/hosts
