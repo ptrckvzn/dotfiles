@@ -1,0 +1,5 @@
+#!/usr/local/bin/fontforge
+Open($1);
+Reencode("unicode");
+Generate($fontname+".ttf");
+Quit(0);
