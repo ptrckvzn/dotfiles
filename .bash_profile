@@ -67,8 +67,3 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # pyenv
 eval "$(pyenv init -)"
-
-# https://unix.stackexchange.com/questions/103898/how-to-start-tmux-with-attach-if-a-session-exists/176885#176885
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux new -As0
-fi
