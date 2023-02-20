@@ -20,8 +20,7 @@ ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
-# Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install a modern version of Bash.
 brew install bash
 brew install bash-completion@2
@@ -97,7 +96,7 @@ brew install tmux
 
 # fzf - fuzzy finder
 brew install fzf
-$(brew --prefix)/opt/fzf/install --key-bindings --completion --no-update-rc --no-fish --no-zsh
+$(brew --prefix fzf)/install --key-bindings --completion --no-update-rc --no-fish --no-zsh
 
 # fz - https://github.com/changyuheng/fz
 [ ! -d ~/.bash_completion.d ] && mkdir ~/.bash_completion.d
