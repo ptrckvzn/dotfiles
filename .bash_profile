@@ -43,11 +43,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-# Add 'vagrant' completion
-if [ -f `brew --prefix`/etc/bash_completion.d/vagrant ]; then
-    source `brew --prefix`/etc/bash_completion.d/vagrant
-fi
-
 # fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

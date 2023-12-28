@@ -66,6 +66,8 @@
 	# Show the user email for the current repository.
 	whoami = config user.email
 
+	br = branch -r
+
 [apply]
 
 	# Detect whitespace errors when applying a patch.
@@ -149,12 +151,27 @@
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
 
+	# Use 3-way merge conflict resolution
+	# Ref: https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging
+	conflictStyle = diff3
+
+# Use rerere to avoid resolving the same conflict multiple times
+# Ref: https://git-scm.com/docs/rerere
+[rerere]
+	enabled = true
+
 [push]
 
 	# https://git-scm.com/docs/git-config#git-config-pushdefault
 	default = simple
+
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
+
+[pull]
+
+	# Ensure that when pull for changes, your local changes are replied on top
+	rebase = true
 
 # URL shorthands
 
@@ -181,3 +198,7 @@
 [init]
 
 	defaultBranch = main
+
+[tag]
+	# when listing tags, order them correctly (Eg. 0.1.10 > 0.1.9)
+	sort = -v:refname

@@ -110,9 +110,9 @@ brew install flac
 brew install lame
 
 # Cloud providers
-brew install aws-elasticbeanstalk
-brew install awscli
-brew install azure-cli
+# brew install aws-elasticbeanstalk
+# brew install awscli
+# brew install azure-cli
 
 # Hombrew Cask
 brew tap homebrew/cask
@@ -120,39 +120,35 @@ brew tap homebrew/cask
 brew install --cask adobe-acrobat-reader
 brew install --cask adobe-digital-editions
 brew install --cask calibre
-brew install --cask docker
-brew install --cask discord
+# brew install --cask discord
 brew install --cask figma
-brew install --cask firefox-developer-edition
+# brew install --cask firefox-developer-edition
 brew install --cask github
 brew install --cask google-chrome
 # brew install --cask handbrake
-brew install --cask hyper
-brew install --cask imageoptim
+# brew install --cask imageoptim
 brew install --cask jetbrains-toolbox
-# brew install --cask kap
-# brew install --cask keka
-# brew install --cask min
+brew install --cask keka
 # brew install --cask musicbrainz-picard
-brew install --cask maccy
-brew install --cask microsoft-edge
 brew install --cask nordvpn
-brew install --cask plex-media-player
+brew install --cask orbstack
+brew install --cask plex
 brew install --cask postman
 brew install --cask raycast
-brew install --cask sequel-ace
+# brew install --cask sequel-ace
 brew install --cask slack
 brew install --cask soulseek
 brew install --cask spotify
-brew install --cask tableplus
+brew install --cask sysex-librarian
+# brew install --cask tableplus
 brew install --cask transmission
-brew install --cask vagrant
-brew install --cask virtualbox
+# brew install --cask vagrant
+# brew install --cask virtualbox
 brew install --cask visual-studio-code
 brew install --cask vlc
 
 # Completions
-brew install vagrant-completion
+# brew install vagrant-completion
 
 # Remove outdated versions from the cellar.
 brew cleanup
