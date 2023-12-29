@@ -61,8 +61,6 @@ brew install ttfautohint
 
 # Install other useful binaries.
 brew install ack
-brew install awscli
-brew install azure-cli
 # brew install exiv2
 brew install gh
 brew install git
@@ -114,9 +112,6 @@ brew install lame
 # brew install awscli
 # brew install azure-cli
 
-# Hombrew Cask
-brew tap homebrew/cask
-
 brew install --cask adobe-acrobat-reader
 brew install --cask adobe-digital-editions
 brew install --cask calibre
@@ -135,20 +130,13 @@ brew install --cask orbstack
 brew install --cask plex
 brew install --cask postman
 brew install --cask raycast
-# brew install --cask sequel-ace
 brew install --cask slack
 brew install --cask soulseek
 brew install --cask spotify
 brew install --cask sysex-librarian
-# brew install --cask tableplus
 brew install --cask transmission
-# brew install --cask vagrant
-# brew install --cask virtualbox
 brew install --cask visual-studio-code
 brew install --cask vlc
-
-# Completions
-# brew install vagrant-completion
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -2,15 +2,12 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin croustille;
-
 function doIt() {
 	rsync --exclude ".git/" \
 		--exclude ".DS_Store" \
 		--exclude "bootstrap.sh" \
 		--exclude "brew.sh" \
 		--exclude "packages.sh" \
-		--exclude "vagrant.sh" \
 		-avh --no-perms . ~;
 	source ~/.bash_profile;
 }
