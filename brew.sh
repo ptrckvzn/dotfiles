@@ -106,6 +106,8 @@ curl "https://raw.githubusercontent.com/changyuheng/fz/master/{fz.sh}" \
 # Music
 brew install flac
 brew install lame
+# brew install --cask dexed
+# brew install --cask musicbrainz-picard
 
 # Cloud providers
 # brew install aws-elasticbeanstalk
@@ -117,14 +119,13 @@ brew install --cask adobe-digital-editions
 brew install --cask calibre
 # brew install --cask discord
 brew install --cask figma
-# brew install --cask firefox-developer-edition
+brew install --cask firefox-developer-edition
 brew install --cask github
 brew install --cask google-chrome
 # brew install --cask handbrake
-# brew install --cask imageoptim
+brew install --cask imageoptim
 brew install --cask jetbrains-toolbox
-brew install --cask keka
-# brew install --cask musicbrainz-picard
+# brew install --cask keka
 brew install --cask nordvpn
 brew install --cask orbstack
 brew install --cask plex
